@@ -27,11 +27,11 @@ export const EventDetailScreen = ({ route }) => {
 
       <View style={styles.textContainer}>
         <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.location}>{item.location}</Text>
-        <Text style={styles.price}>{item.presentacion}</Text>
-        <View style={styles.ratingContainer}>
+        <Text style={styles.names}>{item.names}</Text>
+        <Text style={styles.title}>{item.presentacion}</Text>
+        <View style={styles.fechaContainer}>
           <AntDesign name='calendar' size={20} color={COLORES.primary} />
-          <Text style={styles.rating}>{item.fecha}</Text>
+          <Text style={styles.fecha}>{item.fecha}</Text>
         </View>
         {currentUser && (
           <>
@@ -39,7 +39,7 @@ export const EventDetailScreen = ({ route }) => {
               style={styles.webButton}
               to={{ screen: 'EventDetailWeb', params: { url: item.url } }}
             >
-              Ir a la web
+              Visitar
             </Link>
             <MapView
               style={styles.map}

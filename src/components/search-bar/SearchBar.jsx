@@ -7,7 +7,7 @@ import { COLORES } from '../../utils/theme'
 export const SearchBar = ({ handleSearch, searchQuery }) => {
   return (
     <View style={styles.searchContainer}>
-      <Ionicons name='search' size={30} color={COLORES.primary} />
+      <Ionicons name='search' size={35} color={COLORES.primary} />
       <TextInput
         placeholder='¿Cual Evento Politico Buscas?'
         style={styles.buscador}
