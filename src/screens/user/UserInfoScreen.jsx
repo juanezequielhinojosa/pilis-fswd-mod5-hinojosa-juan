@@ -15,7 +15,7 @@ export const UserInfoScreen = () => {
       <View style={styles.header}>
         <Image
           style={styles.profileImage}
-          source={require('../../../assets/images/avatar.png')}
+          source={require("../../../assets/images/avatar.png")}
         />
         <View style={styles.profileInfo}>
           <Text style={styles.profileName}>{currentUser.username}</Text>
@@ -26,20 +26,18 @@ export const UserInfoScreen = () => {
         </TouchableOpacity>
       </View>
       <View style={styles.content}>
-        <Text style={styles.sectionTitle}>About Me</Text>
+        <Text style={styles.sectionTitle}>Acerca de mi</Text>
         <Text style={styles.sectionText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-          tellus eu nisi tincidunt ultrices. Morbi id dictum ipsum. Nunc nec
-          lacus massa. Integer eget elit non elit sodales maximus.
+          Desde el año 2018 hasta el 2022 me desempeño en el campo de la
+          programación informática, tengo dominio de distintos lenguajes de
+          programación, a lo largo de las distintas materias de la carrera de
+          Analista Programador participe y desarrolle distintos proyectos.
         </Text>
         <Text style={styles.sectionTitle}>Interests</Text>
         <Text style={styles.sectionText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-          tellus eu nisi tincidunt ultrices. Morbi id dictum ipsum. Nunc nec
-          lacus massa. Integer eget elit non elit sodales maximus.
+          Me intereasa trabajar como programador y mejorar dia a dia mis habilidades tecnicas.
         </Text>
       </View>
-
     </ScrollView>
-  )
+  );
 }
