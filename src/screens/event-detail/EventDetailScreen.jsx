@@ -12,7 +12,7 @@ export const EventDetailScreen = ({ route }) => {
   const { currentUser } = useContext(UserContext)
   const navigation = useNavigation()
 
-  const handleLogin = () => {
+  const handleAction = () => {
       navigation.navigate("Profile");
   }
 
@@ -66,8 +66,8 @@ export const EventDetailScreen = ({ route }) => {
             </MapView>
           </>
         ) : (
-          <TouchableOpacity style={styles.button} onPress={handleLogin}>
-            <Text style={styles.webButton}>Mas Info</Text>
+          <TouchableOpacity style={styles.button} onPress={handleAction}>
+            <Text style={styles.webButton}>Mas Informacion</Text>
           </TouchableOpacity>
         )}
         <Text style={styles.description}>{item.description}</Text>
